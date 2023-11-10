@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BlogCardComponent } from '../components/blog-card.component';
+import { BlogCardComponent } from '../../components/blog-card-component/blog-card.component';
 
 @Component({
   selector: 'codnebi-workspace-landing',

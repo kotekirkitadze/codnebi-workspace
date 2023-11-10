@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { NxWelcomeComponent } from './nx-welcome.component';
-import { LandingComponent } from './pages/landing.component';
+import { LandingComponent } from './pages/landing-page/landing.component';
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent, RouterModule,
-    LandingComponent],
+  imports: [NxWelcomeComponent, RouterModule, LandingComponent],
   selector: 'codnebi-workspace-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
