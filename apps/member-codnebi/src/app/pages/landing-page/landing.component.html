@@ -22,9 +22,14 @@
 <section class="blog_section">
   <h1>ბლოგები</h1>
   <div class="card-container">
-    <codnebi-workspace-blog-card></codnebi-workspace-blog-card>
-    <codnebi-workspace-blog-card></codnebi-workspace-blog-card>
-    <codnebi-workspace-blog-card></codnebi-workspace-blog-card>
+    <codnebi-workspace-blog-card
+      (click)="onBlogDetails($event)"
+    ></codnebi-workspace-blog-card>
+    <codnebi-workspace-blog-card
+      (click)="onBlogDetails($event)"
+    ></codnebi-workspace-blog-card>
+    <codnebi-workspace-blog-card (click)="onBlogDetails($event)">
+    </codnebi-workspace-blog-card>
   </div>
 
   <button class="more_blogs_btn">მეტი სტატია</button>

@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BlogCardComponent } from '../../components/blog-card-component/blog-card.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'codnebi-workspace-landing',
@@ -9,4 +10,10 @@ import { BlogCardComponent } from '../../components/blog-card-component/blog-car
   templateUrl: './landing.component.html',
   styleUrls: ['./landing.component.scss'],
 })
-export class LandingComponent {}
+export class LandingComponent {
+  router = inject(Router);
+  onBlogDetails(id: Event) {
+    id;
+    this.router.navigateByUrl('/blog-details/' + 1);
+  }
+}
