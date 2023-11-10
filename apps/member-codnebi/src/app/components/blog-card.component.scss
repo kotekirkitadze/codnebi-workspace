@@ -1,0 +1,43 @@
+.card {
+  overflow: hidden;
+  width: 35rem;
+  background: rgb(244, 244, 244);
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &:hover {
+    transform: scale(1.1);
+  }
+  transition: all 0.5s ease;
+  img {
+    margin-top: 3rem;
+    width: 30%;
+    height: 30%;
+    border-radius: 37%;
+    display: flex;
+  }
+  span {
+    font-family: 'YAFdJoNRMmU 0', _fb_, auto;
+    font-size: 18.6667px;
+    color: black;
+  }
+  .small_content {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    line-height: 2.5rem;
+  }
+  .author {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(29, 205, 141);
+    font-family: 'YAFdJoNRMmU 0', _fb_, auto;
+    font-size: 21.3333px;
+    color: rgb(29, 205, 141);
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 1rem;
+  }
+}
