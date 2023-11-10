@@ -1,0 +1,33 @@
+{
+  "name": "member-codnebi-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/member-codnebi-e2e/src",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/member-codnebi-e2e/cypress.config.ts",
+        "testingType": "e2e",
+        "devServerTarget": "member-codnebi:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "member-codnebi:serve:production"
+        },
+        "ci": {
+          "devServerTarget": "member-codnebi:serve-static"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/member-codnebi-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["member-codnebi"]
+}
