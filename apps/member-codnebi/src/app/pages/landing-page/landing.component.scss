@@ -180,3 +180,15 @@ span {
   }
   margin-top: 2rem;
 }
+codnebi-workspace-burger-menu {
+  display: none;
+}
+@media screen and (max-width: 810px) {
+  codnebi-workspace-burger-menu {
+    display: block;
+  }
+
+  codnebi-workspace-header {
+    display: none;
+  }
+}
