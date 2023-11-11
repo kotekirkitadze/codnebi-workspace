@@ -3,17 +3,12 @@ import { CommonModule } from '@angular/common';
 import { BlogCardComponent } from '../../components/blog-card-component/blog-card.component';
 import { Router } from '@angular/router';
 import { HeaderComponent } from '../../components/header-component/header.component';
-import { BurgerMenuComponent } from '../../components/burger-menu-component/burger-menu.component';
+import { SideNavComponent } from '../../components/burger-menu-component/side-nav.component';
 
 @Component({
   selector: 'codnebi-workspace-landing',
   standalone: true,
-  imports: [
-    CommonModule,
-    BlogCardComponent,
-    HeaderComponent,
-    BurgerMenuComponent,
-  ],
+  imports: [CommonModule, BlogCardComponent, HeaderComponent, SideNavComponent],
   templateUrl: './landing.component.html',
   styleUrls: ['./landing.component.scss'],
 })
