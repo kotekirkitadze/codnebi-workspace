@@ -56,6 +56,54 @@ span {
   }
 }
 
+.service_section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 4rem;
+  background: rgb(26, 37, 41);
+  h1 {
+    color: rgb(29, 205, 141);
+    font-size: 3.5rem;
+  }
+  span {
+    color: white;
+    font-size: 2rem;
+  }
+}
+.service_card_container {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media screen and (max-width: 810px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.service_card {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  width: 30%;
+  background-color: rgb(38, 50, 55);
+  padding: 3rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  @media screen and (max-width: 810px) {
+    width: 100%;
+  }
+  h3 {
+    color: rgb(29, 205, 141);
+    font-size: 3rem;
+  }
+  img {
+    width: 35%;
+  }
+  span {
+    font-size: 2rem;
+  }
+}
+
 .donate_section {
   width: 100%;
   display: flex;
