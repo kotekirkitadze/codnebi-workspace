@@ -1,0 +1,13 @@
+codnebi-workspace-side-nav {
+  display: none;
+}
+@media screen and (max-width: 810px) {
+  codnebi-workspace-side-nav {
+    display: block;
+    width: 100%;
+  }
+
+  codnebi-workspace-header {
+    display: none;
+  }
+}

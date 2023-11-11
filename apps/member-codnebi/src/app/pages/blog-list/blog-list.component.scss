@@ -1,0 +1,46 @@
+.gallery {
+  grid-column: full-start / full-end;
+
+  display: grid;
+  grid-template-rows: repeat(7, 5vw);
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 1.5rem;
+  padding: 1.5rem;
+  justify-items: center;
+  width: 90%;
+  margin: 0 auto;
+  &__item {
+    &--1 {
+      grid-row: 1 / span 7;
+      grid-column: 1 / span 5;
+      @media screen and (max-width: 768px) {
+        grid-column: 1 / span 8;
+      }
+    }
+
+    &--2 {
+      grid-row: 1 / span 7;
+      grid-column: 6 / span 3;
+      @media screen and (max-width: 768px) {
+        grid-row: 8 / span 9;
+        grid-column: 2 / span 6;
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+.homes {
+  grid-column: center-start / center-end;
+  margin: 2rem auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-gap: 7rem;
+  justify-items: center;
+}
