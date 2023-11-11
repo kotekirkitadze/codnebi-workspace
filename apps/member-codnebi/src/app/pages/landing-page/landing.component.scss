@@ -6,6 +6,21 @@
   margin: 5rem auto;
 }
 
+.content {
+  display: flex;
+  // justify-content: space-between;
+
+  .img_container {
+    align-self: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    img {
+      height: 40rem;
+    }
+  }
+}
+
 .content_desc {
   display: flex;
   flex-direction: column;
@@ -191,5 +206,19 @@ codnebi-workspace-side-nav {
 
   codnebi-workspace-header {
     display: none;
+  }
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1000px) {
+  .content {
+    .img_container {
+      display: none;
+    }
   }
 }
