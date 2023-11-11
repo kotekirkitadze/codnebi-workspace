@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { BlogCardComponent } from '../../components/blog-card-component/blog-card.component';
 import { Router } from '@angular/router';
 import { HeaderComponent } from '../../components/header-component/header.component';
-import { SideNavComponent } from '../../components/burger-menu-component/side-nav.component';
+import { SideNavComponent } from '../../components/side-nav-component/side-nav.component';
 
 @Component({
   selector: 'codnebi-workspace-landing',
