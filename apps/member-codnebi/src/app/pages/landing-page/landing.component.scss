@@ -95,12 +95,18 @@ span {
   h3 {
     color: rgb(29, 205, 141);
     font-size: 3rem;
+    @media screen and (max-width: 510px) {
+      font-size: 2.5rem;
+    }
   }
   img {
     width: 35%;
   }
   span {
     font-size: 2rem;
+    @media screen and (max-width: 510px) {
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -201,6 +207,9 @@ span {
   justify-content: space-between;
   gap: 2rem;
   cursor: pointer;
+  @media screen and (max-width: 550px) {
+    justify-content: center;
+  }
 }
 
 // justify-content: center;
