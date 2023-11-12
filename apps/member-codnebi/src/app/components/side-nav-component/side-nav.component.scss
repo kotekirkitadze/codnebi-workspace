@@ -68,7 +68,14 @@ input[type='checkbox']:checked ~ .hamburger-lines .line3 {
 
 .navbar {
   width: 100%;
+  // padding: 2rem;
+  // height: 8rem;
+
   box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+}
+.container {
+  // border: 2px solid red;
+  // height: 100% !important;
 }
 
 .nav-container {
