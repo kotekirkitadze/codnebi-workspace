@@ -21,7 +21,12 @@
           "apps/member-codnebi/src/assets"
         ],
         "styles": ["apps/member-codnebi/src/styles.scss"],
-        "scripts": []
+        "scripts": [],
+        "server": "apps/member-codnebi/src/main.server.ts",
+        "prerender": true,
+        "ssr": {
+          "entry": "apps/member-codnebi/server.ts"
+        }
       },
       "configurations": {
         "production": {
